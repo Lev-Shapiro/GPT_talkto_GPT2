@@ -1,0 +1,33 @@
+{
+  "name": "ts_template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src/**/*.ts",
+    "format": "eslint src/**/*.ts --fix",
+    "style": "npm run lint && npm run format",
+    "dev": "NODE_PATH=./src nodemon src/main.ts"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm lint"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@shapilev/console-step": "^1.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
+    "eslint": "^8.43.0",
+    "nodemon": "^2.0.22",
+    "openai": "^4.49.1",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "prettier": "^2.8.8"
+  }
+}
