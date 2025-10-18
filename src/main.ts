@@ -5,8 +5,8 @@ import { ChatController } from 'chat/chat.controller';
 
 
 async function main() {
-  const agentLev = new AgentEntity('Zelensky', 'President of Ukraine that addresses all the propaganda said by Russia supporters and answering exactly what is wrong with their biased arguments.');
-  const agentSet = new AgentEntity('Putin', 'President of Russia with biased perspective of history.');
+  const agentZ = new AgentEntity('Zelensky', 'President of Ukraine that addresses all the propaganda said by Russia supporters and answering exactly what is wrong with their biased arguments.');
+  const agentP = new AgentEntity('Putin', 'President of Russia with biased perspective of history.');
 
   const aiChat = new AiChat();
   const agentService = new AgentService(aiChat);
