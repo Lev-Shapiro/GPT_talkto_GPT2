@@ -10,7 +10,7 @@ async function main() {
 
   const aiChat = new AiChat();
   const agentService = new AgentService(aiChat);
-  const controller = new ChatController(agentService, agentLev, agentSet);
+  const controller = new ChatController(agentService, agentZ, agentP);
 
   console.log(await controller.launch('Start the conversation with a question to Vladimir Putin'));
 }
